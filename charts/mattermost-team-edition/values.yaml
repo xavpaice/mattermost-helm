@@ -55,7 +55,7 @@ service:
   loadBalancerSourceRanges: []
 
 ingress:
-  enabled: false
+  enabled: true
   path: /
   annotations: {}
     # kubernetes.io/ingress.class: nginx
@@ -97,8 +97,8 @@ externalDB:
 mysql:
   enabled: true
   mysqlRootPassword: ""
-  mysqlUser: ""
-  mysqlPassword: ""
+  mysqlUser: "samepleUser"
+  mysqlPassword: "samplePassword"
   mysqlDatabase: mattermost
 
   repository: mysql
